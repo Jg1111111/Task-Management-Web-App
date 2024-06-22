@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    li {
+        border: 1px solid darkgrey;
+    box-shadow: 0px 0px 5px 0px #c6c0c0;
+    border-radius: 2px;
+    }
+</style>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">TaskManager</a>
+  </nav>
+
+
+  <div id="taskHeader" class="container mt-5">
+    <h1 class="text-center">Task Management</h1>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <form id="taskForm">
+          <div class="form-group">
+            <label for="taskTitle">Title</label>
+            <input type="text" class="form-control" id="taskTitle" placeholder="Enter task title">
+          </div>
+          <div class="form-group">
+            <label for="taskDescription">Description</label>
+            <textarea class="form-control" id="taskDescription" rows="3" placeholder="Enter task description"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="taskDueDate">Due Date</label>
+            <input type="date" class="form-control" id="taskDueDate">
+          </div>
+          <button type="submit" id="submit" class="btn btn-primary btn-block">Add Task</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Task List -->
+    <div class="row mt-5">
+      <div class="col-md-8 offset-md-2">
+        <ul class="list-group" id="taskList">
+          <!-- Task items will be appended here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer mt-auto py-3">
+    <div class="container text-center">
+      <span class="text-muted">Crafted with ☕️ and passion by JG</span>
+    </div>
+  </footer>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ <script src="index.js"></script>
+
+</body>
+</html>
