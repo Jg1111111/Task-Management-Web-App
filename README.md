@@ -27,7 +27,6 @@ To run this application locally, follow these steps:
    ```
    git clone https://github.com/Jg1111111/Task-Management-Web-App.git
    ```
-   Replace `<repository_url>` with the actual URL of this repository.
 
 2. **Install Dependencies**:
    ```
